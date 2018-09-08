@@ -1,0 +1,10 @@
+name: crystal-template
+version: 0.1.0
+
+authors:
+  - assly <blue20will@gmail.com>
+
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+    version: 0.8.0

@@ -1,0 +1,11 @@
+# check coding style with ameba
+# it will pass then check syntax with `crystal build`
+# if `--no-codegen` option specified, binary file won't create
+files: src/**/*.cr
+run: bin/ameba -f flycheck && crystal build --no-codegen %file% && echo 'success!'
+
+---
+
+# if updated, re-install dependencies
+files: shard.yml
+run: shards update && echo 'success!'
